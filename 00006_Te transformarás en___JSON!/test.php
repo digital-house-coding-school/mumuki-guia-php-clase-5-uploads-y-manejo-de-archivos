@@ -6,6 +6,7 @@ public function testArray1(): void {
   ];
   
   $resultado = aJSON($array);
+  var_dump($resultado);exit;
   
   $this->assertTrue(is_string($resultado), "La función no retorna un string");
   
