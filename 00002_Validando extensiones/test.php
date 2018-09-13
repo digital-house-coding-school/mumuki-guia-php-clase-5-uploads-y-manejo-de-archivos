@@ -51,4 +51,41 @@ public function testJPEG(): void {
   
   $this->assertTrue($resultado, "La función esta fallando si el archivo se llama 'avatar.jpeg'");
 }
+
+
+
+public function testTXT(): void {
+  $_FILES = [
+    "avatar" => [
+      "name" => "notas.txt",
+      "type" => "text/plain",
+      "tmp_name" => "/tmp/img/php6hst32",
+      "error" => 0,
+      "size" => 1024
+    ]
+  ];
+  $resultado = $this->validarExtension();
+  
+  $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
+  
+  $this->assertFalse($resultado, "La función esta fallando si el archivo se llama 'notas.txt'");
+}
+
+public function testHTML(): void {
+  $_FILES = [
+    "avatar" => [
+      "name" => "home.html",
+      "type" => "text/html",
+      "tmp_name" => "/tmp/img/php6hst32",
+      "error" => 0,
+      "size" => 1024
+    ]
+  ];
+  $resultado = $this->validarExtension();
+  
+  $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
+  
+  $this->assertFalse($resultado, "La función esta fallando si el archivo se llama 'home.html'");
+}
+
 public /*...content...*/
