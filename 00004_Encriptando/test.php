@@ -5,8 +5,7 @@ public function testHash(): void {
   
   $this->assertTrue(is_string($resultado), "La función no esta retornando un string");
   
-  $hash = password_hash($texto, PASSWORD_DEFAULT);
-  $this->assertTrue(password_verify($texto, $hash), "El hash retornado no parecería ser correcto");
+  $this->assertTrue(password_verify($texto, $resultado), "El hash retornado no parecería ser correcto");
 }
 
 public /*...content...*/
