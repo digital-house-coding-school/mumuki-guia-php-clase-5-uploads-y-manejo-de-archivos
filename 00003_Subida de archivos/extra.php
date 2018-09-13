@@ -1,6 +1,7 @@
 namespace sarasa;
 
 $resultado = false;
+$dest = "";
 
 function move_uploaded_file($a, $b) {
   global $resultado;
