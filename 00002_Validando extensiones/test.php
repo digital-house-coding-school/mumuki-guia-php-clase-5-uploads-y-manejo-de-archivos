@@ -59,7 +59,7 @@ public function testTXT(): void {
       "size" => 1024
     ]
   ];
-  $resultado = $this->validarAvatar();
+  $resultado = $this->validarExtension();
   
   $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
   
@@ -76,7 +76,7 @@ public function testTXT(): void {
       "size" => 1024
     ]
   ];
-  $resultado = $this->validarAvatar();
+  $resultado = $this->validarExtension();
   
   $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
   
