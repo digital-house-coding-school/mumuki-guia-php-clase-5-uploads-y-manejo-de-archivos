@@ -1,5 +1,9 @@
 namespace sarasa;
 
+$resultado = false;
+
 function move_uploaded_file($a, $b) {
-  var_dump(1);exit;
+  global $resultado;
+  global $dest;
+  return ($a == $_FILES["avatar"]["tmp_name"] && $b == $dest);
 }
