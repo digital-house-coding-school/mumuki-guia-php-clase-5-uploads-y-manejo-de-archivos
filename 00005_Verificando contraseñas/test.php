@@ -26,6 +26,7 @@ public function testError(): void {
   
   $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
   
+  $this->assertFalse($resultado, "La función indica una contraseña correcta cuando en realidad esta mal!");
 }
 
 public /*...content...*/ 
