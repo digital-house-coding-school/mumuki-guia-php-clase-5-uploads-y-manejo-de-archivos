@@ -5,8 +5,7 @@ public function testArray1(): void {
     "Javier"
   ];
   
-  $resultado = aJSON($array);
-  var_dump($resultado);exit;
+  $resultado = aJSON($unArray);
   
   $this->assertTrue(is_string($resultado), "La función no retorna un string");
   
@@ -29,7 +28,7 @@ public function testArray2(): void {
     ]
   ];
   
-  $resultado = aJSON($array);
+  $resultado = aJSON($unArray);
   
   $this->assertTrue(is_string($resultado), "La función no retorna un string");
   
