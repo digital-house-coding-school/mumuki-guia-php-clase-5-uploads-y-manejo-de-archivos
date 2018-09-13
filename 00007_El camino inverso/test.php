@@ -5,11 +5,15 @@ public function testArray1(): void {
     "Javier"
   ];
   
-  $resultado = aJSON($unArray);
+  $json = json_encode($unArray);
   
-  $this->assertTrue(is_string($resultado), "La función no retorna un string");
+  $resultado = aArray($json);
   
-  $this->assertTrue($resultado === json_encode($unArray), "La función no retorna el JSON esperado");
+  $this->assertTrue(is_array($resultado), "La función no retorna un array");
+  
+  $json2 = json_encode($resultado);
+  
+  $this->assertTrue($json == $json2, "La función no retorna un string");
 }
 
 public function testArray2(): void {
@@ -32,5 +36,5 @@ public function testArray2(): void {
   
   $this->assertTrue(is_string($resultado), "La función no retorna un string");
   
-  $this->assertTrue($resultado === json_encode($unArray), "La función no retorna el JSON esperado");
+  $this->assertTrue($resultado === json_encode($unArray), "La función no retorna un string");
 }
