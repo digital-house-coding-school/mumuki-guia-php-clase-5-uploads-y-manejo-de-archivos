@@ -25,13 +25,9 @@ public function testCreacionUsuario(): void {
   
   $this->assertTrue($resultado != "", "El archivo usuarios.json parecería estar vacío...");
   
-  var_dump($resultado);
-  
   $resultado = json_decode($resultado, true);
   
-  var_dump($resultado);exit;
-  
-  $this->assertTrue($resultado, "El archivo parecería no tener un JSON válido");
+  $this->assertTrue($resultado != null, "El archivo parecería no tener un JSON válido");
   
   $this->assertTrue(is_array($resultado), "Hay algo raro en el JSON resultado");
   
