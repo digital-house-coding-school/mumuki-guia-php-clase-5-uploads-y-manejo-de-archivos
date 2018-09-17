@@ -36,3 +36,5 @@ Entonces, los pasos a seguir serían:
 
 ¡Muchisimos éxitos!
 
+Dado que el ejercicio es complejo, te dejamos una base de laburo acá abajo si no encontrás por donde empezar :point_down:
+
