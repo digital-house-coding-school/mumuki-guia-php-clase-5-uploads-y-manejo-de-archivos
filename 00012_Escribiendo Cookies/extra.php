@@ -9,6 +9,7 @@ function setcookie($name, $value, $expires = 0) {
   global $testName;
   global $testValue;
   global $testExpires;
+  global $resultado;
   
   $resultado = $testName == $name && $testValue == $value && $testExpires == $expires;
   
