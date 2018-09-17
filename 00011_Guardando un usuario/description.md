@@ -27,7 +27,7 @@ Donde la información provendrá del formulario y el campo password debe estar e
 
 Entonces, los pasos a seguir serían:
 
-1. Armar un array que (`$usuario`) tenga la información final del usuario. Esto debe incluir la contraseña **encriptada**
+1. Armar un array `$usuario` que tenga la información final del usuario. Esto debe incluir la contraseña **encriptada**
 2. Leer el archivo **usuarios.json**
 3. Transformar el contenido de **usuarios.json** a un array
 4. Agregarle al array de todos los usuario el nuevo usuario (`$usuario`)
