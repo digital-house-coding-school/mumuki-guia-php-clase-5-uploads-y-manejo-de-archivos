@@ -11,9 +11,9 @@ function setcookie($name, $value, $expires = 0) {
   global $testExpires;
   global $resultado;
   
-  
-  var_dump(1);exit;
   $resultado = $testName == $name && $testValue == $value && $testExpires == $expires;
+  
+  var_dump($resultado);exit;
   
   return true;
 }
