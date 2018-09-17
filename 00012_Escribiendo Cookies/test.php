@@ -12,5 +12,5 @@ public function testCookie1(): void {
   
   $this->assertTrue(is_bool($resultado), "Llamaste a la función setcookie?");
   
-  $this->assertTrue($resul, "La función no hace lo esperado");
+  $this->assertTrue($resultado, "La función no hace lo esperado");
 }
