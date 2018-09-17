@@ -8,7 +8,7 @@ public function testCookie1(): void {
   $testValue = "es";
   $testExpires = 0;
   
-  $resultado = guardarCookie();
+  guardarCookie();
   
   $this->assertTrue(is_bool($resultado), "Llamaste a la función setcookie?");
   
