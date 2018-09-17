@@ -13,8 +13,6 @@ function setcookie($name, $value, $expires = 0) {
   
   $resultado = $testName == $name && $testValue == $value && $testExpires == $expires;
   
-  var_dump($resultado);exit;
-  
   return true;
 }
 
